@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_xSCdcBu9EeuTMafLMVWT9w" name="without-effect">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_xbi-wBu9EeuTMafLMVWT9w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_xV2mcBu9EeuTMafLMVWT9w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_xXeXEBu9EeuTMafLMVWT9w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_3h8VQBu9EeuTMafLMVWT9w" name="INIT" source="_yyKzcBu9EeuTMafLMVWT9w" target="_zrZhgBu9EeuTMafLMVWT9w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5cBcUBu9EeuTMafLMVWT9w" guard="_3fMb4BvAEeuTMafLMVWT9w" source="_zrZhgBu9EeuTMafLMVWT9w" target="_1z3p4Bu9EeuTMafLMVWT9w" name="S1_2_S2">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_3fMb4BvAEeuTMafLMVWT9w">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_3fMb4RvAEeuTMafLMVWT9w">
+            <language>spel</language>
+            <body>extendedState.variables!=null</body>
+          </specification>
+        </ownedRule>
+        <!--effect xmi:type="uml:OpaqueBehavior" xmi:id="_wAow4BvGEeuTMafLMVWT9w">
+          <language>spel</language>
+          <body>messageHeaders.variables.put('key','value')</body>
+        </effect-->
+        <trigger xmi:type="uml:Trigger" xmi:id="_D4mv8Bu-EeuTMafLMVWT9w" event="_9rBMUBu9EeuTMafLMVWT9w"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_yyKzcBu9EeuTMafLMVWT9w" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zrZhgBu9EeuTMafLMVWT9w" name="S1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_1z3p4Bu9EeuTMafLMVWT9w" name="S2"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_7aiXcBu9EeuTMafLMVWT9w" name="E1"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_9rBMUBu9EeuTMafLMVWT9w" name="E1" signal="_7aiXcBu9EeuTMafLMVWT9w"/>
+</uml:Model>
