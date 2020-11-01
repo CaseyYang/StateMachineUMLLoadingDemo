@@ -23,7 +23,7 @@ public class UmlStateMachine extends StateMachineConfigurerAdapter<String, Strin
     @Bean
     public StateMachineModelFactory<String, String> modelFactoryWithEffect() {
         // return new UmlStateMachineModelFactory("classpath:with-effect.uml");
-        return new UmlStateMachineModelFactory("classpath:with-effect.uml");
+        return new UmlStateMachineModelFactory("classpath:without-effect.uml");
         // return new UmlStateMachineModelFactory("classpath:with-effect-bean.uml");
     }
 
